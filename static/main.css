@@ -15,6 +15,24 @@ header img{
 #head{
     height: 100vh;
 }
+#get-s{
+  background-color: #7470AB;
+}
+
+
+@media only screen and (max-width: 768px){
+  #banner{
+    text-align: center;
+    font-size: 11px;
+    margin: 5px;
+    margin-left: 5px;
+    margin-top: 0;
+  }
+  #par-banner{
+    
+    height: 40px;
+  }
+}
 
 /*  THIS THE SCROLL-BARR */
 /* width */
