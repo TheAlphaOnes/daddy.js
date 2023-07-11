@@ -29,4 +29,4 @@ def daddy_api():
 
 
 # app.config['SERVER_NAME'] = "daddyjs.vercel.app"
-app.run(debug=True)
+# app.run(debug=True)
