@@ -1,18 +1,18 @@
 from flask import Flask, render_template ,send_file,request,jsonify
 import plugs
-# from flask_cors import CORS
+
 app = Flask(__name__)
-app.config['SERVER_NAME'] = "daddyjs.vercel.app"
-# CORS(app)
+
+
 @app.route("/")
 def index():
     return render_template("index.html")
 
-@app.route('/daddy.js', subdomain ='cdn')
+@app.route('/cdn/daddy.js')
 def daddy_file():
     return send_file("static/daddy.js")
 
-@app.route('/daddy.js', subdomain ='api',methods=["POST"])
+@app.route('/api/daddy.js',methods=["POST"])
 def daddy_api():
     try:
         resp = request.json
