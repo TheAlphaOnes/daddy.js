@@ -31,5 +31,5 @@ def daddy_api():
     else: return "<h1>This is a POST request endpoint </h1>"
 
 
-
-# app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)

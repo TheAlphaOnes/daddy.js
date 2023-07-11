@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    background-image: url("/static/bg.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+header img{
+    width: 120px;
+    border-radius: 100%;
+    padding-left: 40px;
+    margin-right: 40px;
+}
+#head{
+    height: 100vh;
+}
+
+/*  THIS THE SCROLL-BARR */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    
+    border-radius: 15px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #A0CFD3; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8D94BA; 
+  }
+
+/* END OF SCHROLL BAR */
