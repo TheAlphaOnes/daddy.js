@@ -2,7 +2,7 @@ from flask import Flask, render_template ,send_file,request,jsonify
 import plugs
 # from flask_cors import CORS
 app = Flask(__name__)
-app.config['SERVER_NAME'] = "daddyjs.vercel.app"
+# app.config['SERVER_NAME'] = "daddyjs.vercel.app"
 # CORS(app)
 @app.route("/")
 def index():
