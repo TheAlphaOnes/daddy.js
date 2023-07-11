@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
     background-color: black;
     background-image: url("/static/bg.svg");
@@ -5,6 +8,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    
 }
 header img{
     width: 120px;
@@ -15,6 +19,7 @@ header img{
 #head{
     height: 100vh;
 }
+
 #get-s{
   background-color: #7470AB;
 }
@@ -31,6 +36,9 @@ header img{
   #par-banner{
     
     height: 40px;
+  }
+  #head-eve{
+    margin-top: 10vh;
   }
 }
 
