@@ -14,19 +14,22 @@ def daddy_file():
 
 @app.route('/api/daddy.js',methods=["POST"])
 def daddy_api():
-    try:
-        resp = request.json
-        url = resp.get("url")
-        data = resp.get("data")
-        reply = plugs.daddy_api(url,data)
-        if reply == 300:
-            reply = {"status":300}
-        else:
-            reply = {"status":200,"data":reply}
+    if request.method == "POST":
+        try:
+            resp = request.json
+            url = resp.get("url")
+            data = resp.get("data")
+            reply = plugs.daddy_api(url,data)
+            if reply == 300:
+                reply = {"status":300}
+            else:
+                reply = {"status":200,"data":reply}
 
-    except: reply = {"status":300}
+        except: reply = {"status":300}
 
-    return jsonify(reply)
+        return jsonify(reply)
+    else: return "<h1>This is a POST request endpoint </h1>"
+
 
 
 # app.run(debug=True)
