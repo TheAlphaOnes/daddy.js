@@ -28,5 +28,5 @@ def daddy_api():
     return jsonify(reply)
 
 
-app.config['SERVER_NAME'] = "https://daddyjs.vercel.app"
+# app.config['SERVER_NAME'] = "daddyjs.vercel.app"
 app.run(debug=True)
