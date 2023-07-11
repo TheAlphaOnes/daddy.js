@@ -1,8 +1,9 @@
 from flask import Flask, render_template ,send_file,request,jsonify
 import plugs
-from flask_cors import CORS
+# from flask_cors import CORS
 app = Flask(__name__)
-CORS(app)
+app.config['SERVER_NAME'] = "daddyjs.vercel.app"
+# CORS(app)
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -28,5 +29,4 @@ def daddy_api():
     return jsonify(reply)
 
 
-app.config['SERVER_NAME'] = "daddyjs.vercel.app"
 # app.run(debug=True)
