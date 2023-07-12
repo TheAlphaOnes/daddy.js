@@ -1,6 +1,12 @@
 html{
   scroll-behavior: smooth;
 }
+
+.prevent-select-text{
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
 body{
     background-color: black;
     background-image: url("/static/bg.svg");
@@ -24,6 +30,9 @@ header img{
   background-color: #7470AB;
 }
 
+#get-s:hover{
+  background-color: #6c66bb;
+}
 
 @media only screen and (max-width: 768px){
   #banner{
@@ -40,6 +49,14 @@ header img{
   #head-eve{
     margin-top: 10vh;
   }
+}
+
+.code {
+  font-family: monospace;
+  color: whitesmoke;
+  background-color: #292828;
+  padding: 2px;
+  font-size: 105%;
 }
 
 /*  THIS THE SCROLL-BARR */
