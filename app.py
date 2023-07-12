@@ -30,6 +30,10 @@ def daddy_api():
         return jsonify(reply)
     else: return "<h1>This is a POST request endpoint </h1>"
 
+@app.route("/api/sumarise")
+def sumarise():
+    return "ram ram"
+
 
 if __name__ == "__main__":
     app.run(debug=True,host="0.0.0.0")
