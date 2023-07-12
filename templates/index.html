@@ -116,18 +116,18 @@
             <ul>
               <li>
                 <p class="mb-6 text-white sm:text-lg md:mb-8"> &#x2022; <span class="font-bold" style="color: #FF8945;">Step 1 :</span>  link cdn and import daddy </p>
-                <p class="mb-6 text-white code sm:text-lg md:mb-8" >
+                <p id="code" class="mb-6 text-white code sm:text-lg md:mb-8" >
                   https://daddyjs.vercel.app/cdn/daddy.js <br>
                   
                 </p>
-                <p class="mb-6 text-white code sm:text-lg md:mb-8" >
+                <p id="code" class="mb-6 text-white code sm:text-lg md:mb-8" >
                   
                   import { daddy } from "http://daddyjs.vercel.app/cdn/daddy.js"; <br>
                 </p>
               </li>
               <li>
                 <p class="mb-6 text-white sm:text-lg md:mb-8">&#x2022; <span class="font-bold" style="color: #FF8945;"> Step 2 :</span> define id from parent and child webpage</p>
-                <p class="mb-6 text-white code sm:text-lg md:mb-8" >
+                <p id="code" class="mb-6 text-white code sm:text-lg md:mb-8" >
                   
                   let data = {"parent-website-tag-id":"child-website-tag-id","parent-website-tag-id":"child-website-tag-id"}  <br>
                   
@@ -135,20 +135,21 @@
               </li>
               <li>
                 <p class="mb-6 text-white sm:text-lg md:mb-8"> &#x2022; <span class="font-bold" style="color: #FF8945;"> Step 3 :</span></p>
-                <p class="mb-6 text-white code sm:text-lg md:mb-8" >
+                <p id="code" class="mb-6 text-white code sm:text-lg md:mb-8" >
                   let alernate_data = [["child-website-tag-id","alternate-data"],["child-website-tag-id","alternate-data"]] <br>
                   
                 </p>
               </li>
               <li>
                 <p class="mb-6 text-white sm:text-lg md:mb-8"> &#x2022; <span class="font-bold" style="color: #FF8945;"> Step 4 :</span></p>
-                <p class="mb-6 text-white code sm:text-lg md:mb-8" >
+                <p id="code" class="mb-6 text-white code sm:text-lg md:mb-8" >
                   daddy("https://daddyjstest.test",  data,alernate_data) <br>
                 </p>
               </li>
               <li>
                 <p class="mb-6 text-white sm:text-lg md:mb-8"> &#x2022; <span class="font-bold" style="color: #FF8945;"> Full code :</span></p>
-                <p class="mb-6 text-white code sm:text-lg md:mb-8" ><br>
+                <p id="code" class="mb-6 text-white code sm:text-lg md:mb-8" >
+                  <br>
                   import { daddy } from "http://daddyjs.vercel.app/cdn/daddy.js"; <br> <br>
 
                   let data = "parent-website-tag-id":"child-website-tag-id","parent-website-tag-id":"child-website-tag-id"<br> <br>
