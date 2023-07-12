@@ -115,15 +115,31 @@
             </div>
             <ul>
               <li>
-                <p class="mb-6 text-white sm:text-lg md:mb-8"> &#x2022; Step 1 : link cdn</p>
+                <p class="mb-6 text-white sm:text-lg md:mb-8"> &#x2022; Step 1 : link cdn and import </p>
                 <p class="mb-6 text-white code sm:text-lg md:mb-8" >
-                  https://daddyjs.vercel.app/cdn/daddy.js
+                  https://daddyjs.vercel.app/cdn/daddy.js <br>
+                  import { daddy } from "http://daddyjs.vercel.app/cdn/daddy.js"; <br>
                 </p>
               </li>
               <li>
                 <p class="mb-6 text-white sm:text-lg md:mb-8">&#x2022; Step 2 : </p>
                 <p class="mb-6 text-white code sm:text-lg md:mb-8" >
                   
+                  let data = {"parent-website-tag-id":"child-website-tag-id","parent-website-tag-id":"child-website-tag-id"}  <br>
+                  
+                  </p>
+              </li>
+              <li>
+                <p class="mb-6 text-white sm:text-lg md:mb-8"> &#x2022; Step 3 : link cdn</p>
+                <p class="mb-6 text-white code sm:text-lg md:mb-8" >
+                  let alernate_data = [["child-website-tag-id","alternate-data"],["child-website-tag-id","alternate-data"]] <br>
+                  
+                </p>
+              </li>
+              <li>
+                <p class="mb-6 text-white sm:text-lg md:mb-8"> &#x2022; Step 4 : link cdn</p>
+                <p class="mb-6 text-white code sm:text-lg md:mb-8" >
+                  daddy("https://daddyjstest.test",data,alernate_data) <br>
                 </p>
               </li>
             </ul>
