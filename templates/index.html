@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/main.css">
     <link rel="stylesheet" href="static/tailwind.min.css">
+    <style>.code {
+      font-family: monospace;
+      color: whitesmoke;
+      background-color: #292828;
+      background: #292828;
+      padding: 2px;
+      font-size: 105%;
+      padding-left: 15px;
+      word-wrap: break-word;
+    }</style>
     <link rel="shortcut icon" href="static/logo.png" type="image/x-icon">
     <title>// Daddy.js //</title>
 </head>
@@ -134,14 +144,14 @@
                   </p>
               </li>
               <li>
-                <p class="mb-6 text-white sm:text-lg md:mb-8"> &#x2022; <span class="font-bold" style="color: #FF8945;"> Step 3 :</span></p>
+                <p class="mb-6 text-white sm:text-lg md:mb-8"> &#x2022; <span class="font-bold" style="color: #FF8945;"> Step 3 :</span> set the alternative data with the id child webpage </p>
                 <p id="code" class="mb-6 text-white code sm:text-lg md:mb-8" >
                   let alernate_data = [["child-website-tag-id","alternate-data"],["child-website-tag-id","alternate-data"]] <br>
                   
                 </p>
               </li>
               <li>
-                <p class="mb-6 text-white sm:text-lg md:mb-8"> &#x2022; <span class="font-bold" style="color: #FF8945;"> Step 4 :</span></p>
+                <p class="mb-6 text-white sm:text-lg md:mb-8"> &#x2022; <span class="font-bold" style="color: #FF8945;"> Step 4 :</span> now just execute the daddy() with the parent URL data and alternating data</p>
                 <p id="code" class="mb-6 text-white code sm:text-lg md:mb-8" >
                   daddy("https://daddyjstest.test",  data,alernate_data) <br>
                 </p>
@@ -157,12 +167,16 @@
                   daddy("https://daddyjstest.test",data,alernate_data)<br><br>
                 </p>
               </li>
+              <li>
+                <p class="mb-6 text-white sm:text-lg md:mb-8"> &#x2022; <span class="font-bold" style="color: #FF8945;">New features comming soon we are activally working on it ...</span></p>
+                <p class="mb-6 text-white  sm:text-lg md:mb-8" >we have a demo website for you <a style="color: #ff5555;" href="/testpage1" target="_blank">parent </a>webpage <a style="color: #ff5555;" href="/testpage2" target="_blank" >child </a>webpage <a style="color: #ff5555;" href="https://github.com/TheAlphaOnes/daddy.js/tree/master/test" target="_blank" >GitHub </a>Examples </p>
+              </li>
             </ul>
             
         
-            <h2 style="color: #FF8945;"  class="mb-2 text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4">Team</h2>
+            <h2 style="color: #FF8945;"  class="mb-2 text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4">Conclusion</h2>
         
-            <p class="mb-6 text-white sm:text-lg md:mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque natus ratione accusamus laudantium officiis expedita. Iusto placeat error ipsum eligendi cum vero minus aperiam dolorum deleniti nam? Velit, architecto.</p>
+             <p class="mb-6 text-white sm:text-lg md:mb-8">So, you have to import the module from the cdn and then define the element id from parent webpage and from the child webpage from where you want text to be sync and store it in a object <span class="code">[{'id-from-parent' : 'id-from-child'},...]</span> and now you have set up a alternative data in case if anything get messed up in a list <span class="code"> [["id-from-child","aletnative data"]]</span> and now you just need to call daddy() with the arg "url of the parent webpage" , "data of id" ,"alternate data", from now everything will be taken care by the daddy.js</p>
             
           </div>
         </div>

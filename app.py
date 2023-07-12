@@ -34,6 +34,15 @@ def daddy_api():
 def sumarise():
     return "ram ram"
 
+@app.route("/testpage1")
+def testpage1():
+    return "ram ram"
+
+@app.route("/testpage2")
+def testpage2():
+    return "ram ram"
+
+
 
 if __name__ == "__main__":
     app.run(debug=True,host="0.0.0.0")
