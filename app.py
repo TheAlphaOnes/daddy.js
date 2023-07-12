@@ -1,8 +1,9 @@
 from flask import Flask, render_template ,send_file,request,jsonify
+from flask_cors import CORS
 import plugs
 
 app = Flask(__name__)
-
+CORS(app)
 
 @app.route("/")
 def index():
@@ -10,7 +11,7 @@ def index():
 
 @app.route('/cdn/daddy.js')
 def daddy_file():
-    return send_file("static/daddy.js")
+    return send_file("static/modules/daddy.js")
 
 @app.route('/api/daddy.js',methods=["POST"])
 def daddy_api():
@@ -36,11 +37,11 @@ def sumarise():
 
 @app.route("/testpage1")
 def testpage1():
-    return "ram ram"
+    return render_template("test1.html")
 
 @app.route("/testpage2")
 def testpage2():
-    return "ram ram"
+    return render_template("test2.html")
 
 
 

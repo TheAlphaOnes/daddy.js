@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="gg0">loren 1</div>
+    <div id="gg1">lorem 2</div>
+    <div id="gg2">lorem 3</div>
+    <div id="gg3">lorem 4</div>
+
+    <script type="module" >
+
+        import { daddy } from "http://daddyjs.vercel.app/cdn/daddy.js";
+
+        let data = {"dd0":"gg0","dd2":"gg2"}
+        let alernate_data = [["gg1","alternate gg0"],["gg2","alternate gg2"]]
+        daddy("https://daddyjs.vercel.app/testpage1",data,alernate_data)
+    </script>
+</body>
+</html>
