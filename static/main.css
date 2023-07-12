@@ -52,26 +52,8 @@ header img{
   }
 }
 
-.code {
-  font-family: monospace;
-  color: whitesmoke;
-  background-color: #292828;
-  background: #292828;
-  padding: 2px;
-  font-size: 105%;
-  padding-left: 15px;
-  word-wrap: break-word;
-}
-#code {
-  font-family: monospace;
-  color: whitesmoke;
-  background-color: #292828;
-  background: #292828;
-  padding: 2px;
-  font-size: 105%;
-  padding-left: 15px;
-  word-wrap: break-word;
-}
+
+
 /*  THIS THE SCROLL-BARR */
 /* width */
 ::-webkit-scrollbar {
