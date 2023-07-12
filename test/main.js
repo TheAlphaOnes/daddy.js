@@ -7,6 +7,6 @@
 
 import { daddy } from "http://daddyjs.vercel.app/cdn/daddy.js";
 
-let data = {"<parent website tag id>":"<child website tag id>","<parent website tag id>":"<child website tag id>"}
-let alernate_data = [["<child website tag id>","<alternate data>"],["<child website tag id>","<alternate data>"]]
+let data = {"parent-website-tag-id":"child-website-tag-id","parent-website-tag-id":"child-website-tag-id"}
+let alernate_data = [["child-website-tag-id","alternate-data"],["child-website-tag-id","alternate-data"]]
 daddy("https://daddyjstest.test",data,alernate_data)
