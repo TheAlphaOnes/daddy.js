@@ -23,7 +23,7 @@ export function daddy(url, data, alternate_data) {
         }
     }
 
-    fetch("http://daddyjs.vercel.app/cdn/daddy.js", {
+    fetch("http://daddyjs.vercel.app/api/daddy.js", {
 
         method: "POST",
         body: JSON.stringify(send_data),
